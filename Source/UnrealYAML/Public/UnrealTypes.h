@@ -202,6 +202,9 @@ namespace detail
     };
 }
 
+template <> struct convert<FVector2f> : detail::convertVector2D<FVector2f> {};
+template <> struct convert<FVector3f> : detail::convertVector3D<FVector3f> {};
+template <> struct convert<FVector4f> : detail::convertVector4D<FVector4f> {};
 template <> struct convert<FVector2d> : detail::convertVector2D<FVector2d> {};
 template <> struct convert<FVector3d> : detail::convertVector3D<FVector3d> {};
 template <> struct convert<FVector4d> : detail::convertVector4D<FVector4d> {};
